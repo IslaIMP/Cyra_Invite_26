@@ -206,6 +206,17 @@ document.getElementById('addr').innerHTML =
 document.getElementById('greet').textContent = "Dear " + INVITE.recipientName + ",";
 if(!INVITE.showSignature){document.getElementById('sign').style.display='none';}
 
+// auto-fit the envelope address: shrink text only if it would overflow the envelope
+function fitAddr(){
+  var addr=document.getElementById('addr'); if(!addr) return;
+  var fs=34; addr.style.fontSize=fs+'px';
+  var maxH=322, maxW=520;
+  while((addr.scrollHeight>maxH || addr.scrollWidth>maxW) && fs>16){ fs-=1; addr.style.fontSize=fs+'px'; }
+}
+fitAddr();
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fitAddr);}
+window.addEventListener('load',fitAddr);
+
 // responsive fit
 const scaler=document.getElementById('scaler');
 function computeFull(){var S=Math.min(window.innerWidth/700,window.innerHeight/720,1.3);

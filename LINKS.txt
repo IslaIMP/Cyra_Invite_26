@@ -1,5 +1,5 @@
-CYRA INVITE LINKS  (replace cyra-invite-26 if your Vercel domain differs)
-================================================================
+CYRA INVITE LINKS
+==================================================
 
 The Prentis Family     -> https://cyra-invite-26.vercel.app/prentis
 The Hiner Family       -> https://cyra-invite-26.vercel.app/hiner
