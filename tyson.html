@@ -60,11 +60,11 @@
   .kraft{position:absolute;inset:0;filter:brightness(1.0) saturate(1.1) sepia(.12);box-shadow:inset 0 0 70px rgba(70,45,15,.32)}
   .seam{position:absolute;background:rgba(80,52,20,.18)}
   .flap{position:absolute;left:0;top:0;width:100%;height:56%;transform-origin:top center}
-  .flap-tex{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);filter:brightness(.99) saturate(1.1) sepia(.12)}
+  .flap-tex{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);background-image:var(--parch);background-size:cover;background-position:center;filter:brightness(.99) saturate(1.1) sepia(.12)}
   .flap-tex::after{content:"";position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);
     background:linear-gradient(180deg,rgba(255,240,200,.16),rgba(70,46,16,.26))}
   .crest-print{position:absolute;left:50%;top:13%;width:196px;height:146px;margin-left:-98px;z-index:2;
-    -webkit-mask:var(--crestmask) center/contain no-repeat;mask:var(--crestmask) center/contain no-repeat;background:rgba(64,42,16,.46)}
+    -webkit-mask:var(--crestmask) center/contain no-repeat;mask:var(--crestmask) center/contain no-repeat;background:rgba(58,38,14,.72)}
   .seal{position:absolute;left:50%;width:122px;height:122px;margin-left:-61px;z-index:3;
     background:var(--sealimg) center/contain no-repeat;filter:drop-shadow(0 5px 7px rgba(0,0,0,.45))}
   .back .seal{top:56%;margin-top:-61px}
