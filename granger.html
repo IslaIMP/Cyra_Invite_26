@@ -73,7 +73,7 @@
   .open-scene{position:absolute;left:50%;top:50%;margin:-188px 0 0 -324px;width:648px;height:376px;display:none;perspective:1400px;backface-visibility:hidden;will-change:transform}
   .open-scene.on{display:block}
   .open-scene.flip-in{animation:flipIn .85s cubic-bezier(.22,0,.35,1) both}
-  .o-letter{position:absolute;left:50%;top:50%;width:548px;height:726px;margin:-363px 0 0 -274px;
+  .o-letter{position:absolute;left:50%;top:50%;width:548px;height:738px;margin:-369px 0 0 -274px;
     border-radius:5px;overflow:hidden;transform:translateY(4px) scale(.36);transform-origin:center center;
     box-shadow:0 30px 70px rgba(0,0,0,.6);z-index:1;will-change:transform;transition:transform 1.5s cubic-bezier(.2,.9,.3,1)}
   .o-letter.emerge{transform:translateY(-148px) scale(.40);z-index:20}
@@ -101,7 +101,7 @@
   .l-body{font-size:18.5px;line-height:1.46}
   .l-details{margin:10px 0 6px}
   .l-details .row{display:flex;gap:10px;margin-bottom:7px;font-size:20px;line-height:1.3;align-items:baseline}
-  .l-details .k{font-family:'Lumos',serif;font-size:17px;color:var(--green-deep);min-width:88px;letter-spacing:.5px}
+  .l-details .k{font-family:'Lumos',serif;font-size:19px;color:var(--green-deep);min-width:96px;letter-spacing:.5px;-webkit-text-stroke:.45px var(--green-deep)}
   .l-details .row span:not(.k){font-weight:600;color:var(--ink-strong)}
   .l-rsvp{font-style:italic;color:var(--wax);margin-top:7px;font-size:18px}
   .l-sign{margin-top:13px}
@@ -166,7 +166,7 @@
                 <div class="l-details">
                   <div class="row"><span class="k">Date</span><span>25 July 2026</span></div>
                   <div class="row"><span class="k">Time</span><span>From 1:30pm<br>Sorting Ceremony begins @ 2pm</span></div>
-                  <div class="row"><span class="k">Place</span><span>Platform 9&frac34; @ 3 Brakrivier Avenue, Gallo Manor</span></div>
+                  <div class="row"><span class="k">Place</span><span>Platform 9&frac34;<br>@ 3 Brakrivier Avenue, Gallo Manor</span></div>
                 </div>
                 <div class="l-rsvp">Please accept your place at Hogwarts by 17 July 2026.</div>
               </div>
@@ -208,7 +208,7 @@ if(!INVITE.showSignature){document.getElementById('sign').style.display='none';}
 // responsive fit
 const scaler=document.getElementById('scaler');
 function computeFull(){var S=Math.min(window.innerWidth/700,window.innerHeight/720,1.3);
-  var sW=(window.innerWidth*0.97)/(S*548), sH=(window.innerHeight*0.96)/(S*726);
+  var sW=(window.innerWidth*0.97)/(S*548), sH=(window.innerHeight*0.96)/(S*738);
   return Math.max(1,Math.min(sW,sH));}
 function fit(){var s=Math.min(window.innerWidth/700, window.innerHeight/720, 1.3);scaler.style.transform='scale('+s+')';
   window.__fullScale=computeFull();
